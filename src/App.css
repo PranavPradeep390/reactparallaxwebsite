@@ -1,0 +1,255 @@
+
+.App {
+  text-align: center;
+}
+
+.parallax-bg {
+  height: 100vh;
+  /* background-image: url('https://www.smallbusiness.nsw.gov.au/sites/default/files/styles/1280/public/2023-07/iStock-622798024.jpg?itok=4Y-YskBS'); */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, .6)), url('https://www.smallbusiness.nsw.gov.au/sites/default/files/styles/1280/public/2023-07/iStock-622798024.jpg?itok=4Y-YskBS'); 
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  height: 700px;
+}
+#homehead{
+  font-size: 4rem;
+  width: 70%;
+  font-weight:bold;
+  margin-top: -40px;
+}
+
+#navbar{
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.navs{
+  display: flex;
+  align-items: center;
+
+  
+}
+.navicon{
+  margin-right: 9px;
+}
+.s1{
+  font-weight: 600;
+  color: rgb(108, 86, 86);
+  
+}
+#navbar2{
+  width: 700px;
+ display: flex;
+ align-items: center;
+  justify-content: space-evenly;
+}
+.parallax-bg>button{
+  padding: 5px;
+}
+#whitepart{
+  width: 100%;
+  height: 180px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.whitein{
+  width: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+.wicons{
+  color: rgb(110, 141, 130);
+}
+#aboutour{
+  width: 80%;
+  height: 470px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: auto;
+}
+#yellowpart{
+  width: 100%;
+  height: 90px;
+  background-color: rgb(158, 217, 38);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#sliders{
+  width: 68%;
+  height: 550px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+
+
+}
+#slidepage{
+  width: 100%;
+  height: 550px;
+
+}
+.slide{
+  width: 300px;
+  height: 250px;
+  position: relative; 
+  overflow-x: hidden;
+  margin: 6.5px;
+
+}
+.slidein{
+  width: 300px;
+  height: 250px;
+  background-color: whitesmoke;
+  position: absolute;
+  padding: 20px;
+  text-align: center;
+  padding-top: 50px;
+}
+.slidein>h5{
+  margin-top: 9px;
+}
+.slide>img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.slide:hover .slidein{
+  animation: car 1.5s ease forwards;
+  animation-delay: 0s;
+}
+
+@keyframes car {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(300px);
+  }
+}
+
+.slide:not(:hover) .slidein{
+  animation: carback 1.5s ease forwards;
+  animation-delay: 0s;
+}
+@keyframes carback {
+  0% {
+    transform: translateX(300px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.slicons{
+  color: rgb(164, 163, 163);
+  font-size: 40px;
+}
+#carouselapge{
+  margin-top: 140px;
+  width: 98%;
+  height: 500px;
+  margin-bottom: 10px;
+}
+.cch5{
+  color: white;
+  font-size: 28px;
+  
+  animation: cch5 1.5s ease forwards;
+  animation-delay: 0s;
+}
+@keyframes cch5 {
+  0% {
+    transform: translateX(500px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.ccp{
+  color: white;
+  font-size: 60px;
+  font-weight: bolder;
+ 
+  animation: ccp 1.5s ease forwards;
+  animation-delay: 0s;
+}
+@keyframes ccp {
+  0% {
+    transform: translateX(-500px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.cci{
+  filter: brightness(55%);
+}
+.quote{
+  padding: 10px 20px;
+  border: 2px solid white;
+  background-color: transparent;
+  font-weight: bold; 
+  margin-bottom: 190px;
+  animation: ccb 1.5s ease forwards;
+  animation-delay: 0s;
+}
+@keyframes ccb {
+  0% {
+    transform: translateY(60px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+#footer{
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footin4{
+  width: 33.33%;
+  height: 100%;
+}
+#fout{
+  width: 100%;
+  height: 190px;
+  background-color: black;
+}
+.footin4>p{
+  font-size: 14px;
+}
+#list{
+  list-style: none;
+}
+#list>li{
+  font-size: 14px;
+
+}
+.footin4>h5{
+  margin-top: 15px;
+}
+#infohead{
+  margin-left: 31px;
+}
+.footin4>i{
+  padding: ;
+}
